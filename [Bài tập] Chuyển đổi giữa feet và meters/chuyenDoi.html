@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <input id="inputFeet" type="number"
+           onchange="feetToMet(this.value)">Meter
+</p>
+
+<p>
+    <input id="outputFeet" type="number"
+           onchange="metToFeet(this.value)">Feet
+</p>
+
+
+<script>
+    function feetToMet(feet) {
+        feet = parseFloat(feet);
+        document.getElementById("outputFeet").value = 3.279*feet;
+    }
+    function metToFeet(met) {
+        met = parseFloat(met);
+        document.getElementById("inputFeet").value = 0.305*met;
+    }
+</script>
+
+</body>
+</html>

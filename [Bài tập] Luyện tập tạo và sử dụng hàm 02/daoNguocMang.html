@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><script>
+    let mang = Array();
+    function input(){
+        let num
+        do{
+            num = prompt("Nhap so. (Nhap 'q' de ket thuc)");
+
+            if(num!='q')
+                mang.push(num);
+
+        }while (num!='q');
+    }
+
+
+    function daoNguocMang() {
+        document.write(mang.reverse(","));
+    }
+
+
+    input();
+    daoNguocMang();
+</script>
+
+
+</body>
+</html>

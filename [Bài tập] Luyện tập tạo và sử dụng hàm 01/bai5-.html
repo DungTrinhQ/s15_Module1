@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ngoiSao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+        chomSao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor', 'Leo']
+        //a = prompt("nhap vao ten ngoi sao");
+    function timTen() {
+        let a = prompt("Nhap ten ngoi sao")
+            i = ngoiSao.indexOf(a);
+        if(i<0){
+            alert("Khong tim thay ");
+        }else{
+            alert(chomSao[i]);
+        }
+    }
+
+
+
+    timTen();
+
+</script>
+
+</body>
+</html>
