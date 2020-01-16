@@ -6,15 +6,24 @@
 </head>
 <body>
 <script>
-
+    let tapHop = Array();
+    function input() {
+        let kytu;
+        let count = 0;
+        while (count < 3) {
+            kytu = prompt("Nhap vao 1 so:)");
+            count++;
+            tapHop.push(kytu);
+        }
+    }
     function timMin() {
-        let min = taphop[0];
-        for (let i=0; i < taphop.length; i++){
-            if(taphop[i] < min){
-                min=taphop[i];
+        let min = tapHop[0];
+        for (let i=0; i < tapHop.length; i++){
+            if(tapHop[i] < min){
+                min = tapHop[i];
             }
         }
-            alert(min);
+            alert(min+" là số bé nhất");
     }
     input();
     timMin();
