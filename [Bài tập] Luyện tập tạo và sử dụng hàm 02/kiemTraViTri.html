@@ -6,17 +6,33 @@
 </head>
 <body>
 <script>
-    let daySo = [1,2,3,4,5,6,7,8,9,0,1,2,3,12,3,12,4,12,5,7,8,9,23,34,12,5];
-        a = prompt("Nhap vao 1 ki tu");
+    let mang = Array();
+    function input(){
+        let kytu;
+        do{
+            kytu = prompt("Nhap so. (Nhap 'q' de ket thuc)");
+
+            if(kytu!='q')
+                mang.push(kytu);
+
+        }while (kytu!=='q');
+    }
+
     function kiemTra() {
+        let a = prompt("Nhap vao 1 ki tu");
         let count = 0;
-        for (let i = 0; i <= daySo.length; i++) {
-            if (a == daySo[i]) {
-                count += 1;
+        for (let i = 0; i <= mang.length; i++) {
+            if (a == mang[i]) {
+                count ++;
             }
         }
-        alert(a+ " xuat hien "+count+" lan");
+        if(count>0){
+            alert(count);
+        }else{
+            alert(-1);
+        }
     }
+    input();
     kiemTra();
 </script>
 
